@@ -13,11 +13,6 @@ Get-ChildItem -Path "$PSScriptRoot\Helpers\" -Filter *.ps1 -Recurse | ForEach-Ob
 # Dot reference all CONNECT data services api files
 Get-ChildItem -Path "$PSScriptRoot\ConnectDataServices\" -Filter *.ps1 -Recurse | ForEach-Object{. $_.FullName }
 
-# ADH1
-#     "ClientId": "1a66d4c0-1be7-4960-81d5-25192aeab88b",
-#    "ClientSecret": "+VsA9JcRXRD0vDFBasgSa4vhCbQTUeTC++TeUAg/ct4="
-
-
 $appSettings = Get-AppSettings
 $Global:API_RESOURCE = $appSettings.Resource
 $Global:API_VERSION = $appSettings.ApiVersion

@@ -8,7 +8,8 @@ Script to help convert an existing CONNECT data services asset into an asset typ
 4. Fill in the placeholder configuration items, like `TenantId`, `NamespaceId`, `ClientId`, `ClientSecret`, `AssetId`
 5. Run the script in PowerShell `Convert-AssetToAssetType.ps1`
 
-_Note that you may need to set the ExecutionPolicy on your machine to allow the script to run_
+_Note that you may need to set the [ExecutionPolicy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.5) on your machine to allow the script to run_
 
 ## Limitations
 - only supports copying stream references, not metadata or status configuration
+
